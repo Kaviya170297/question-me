@@ -1,0 +1,22 @@
+I have below doubts doesnt know whether below xpaths is working or correct for PAT Task-12:
+finding first child for Live classes:
+//div[@id='solutions']//p[(text()='LIVE Classes')][1]
+First child of courses:
+//div[@id='solutions']//p[(text()='Courses')][1]
+First child of Practice:
+//div[@id='solutions']//p[(text()='Practice')][1]
+First child of login and sign up:
+//button[@id='login-btn']/parent::div/child::*[1]
+//button[text()='Sign up']/parent::div/child::*[1]
+
+2. Finding second sibling of login and signup:
+(//button[@id='login-btn']/following-sibling::button)[2]
+Signup doesnt show any child or sibling results:
+(//button[@id='login-btn']/following-sibling::button)[2]
+
+3. selecting parent element of an element using href, did below is correct?
+//a[@href]/parent::div
+
+4. Ancestor and preceding:
+//button[@id='login-btn']/ancestor::*
+//button[@id='login-btn']/preceding::*
